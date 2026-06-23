@@ -161,3 +161,17 @@ ln -sf "$(pwd)/zed/settings.json" ~/.config/zed/settings.json
 ```
 
 Then select **Cozy Rain** in your Zed theme selector (`Cmd + k` then `Cmd + t`).
+
+### 6. Vesktop / Vencord (Discord client)
+
+Symlink the custom theme CSS file directly from this repository to your local Vesktop themes configuration:
+
+```bash
+# Ensure Vesktop themes directory exists
+mkdir -p "$HOME/Library/Application Support/vesktop/themes"
+
+# Create symlink (run from repository root)
+ln -sf "$(pwd)/discord/cozy-rain.theme.css" "$HOME/Library/Application Support/vesktop/themes/cozy-rain.theme.css"
+```
+
+Then go to **Discord Settings > Vencord > Themes**, find **Cozy Rain** under **Local Themes**, and toggle it on!
