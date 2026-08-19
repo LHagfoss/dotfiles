@@ -1,177 +1,67 @@
-# Cozy Rain Theme
+# Rain and Sky themes
 
-A cozy, warm, and dark desktop theme built with a smoky charcoal base, soft cream text, vibrant coral highlights, and deep slate blue indicators.
+Two related dark themes for Zed, Rustcode, and LazyVim:
 
-Designed and tested on Hyprland with Kitty, Cava, Mewline status bar, and Neovim (LazyVim).
+| Role | Rain | Sky |
+| --- | --- | --- |
+| Base | Charcoal `#15171A` | Charcoal `#15171A` |
+| Primary | Coral `#EC6E5D` | Azure `#3894F0` |
+| Secondary | Slate `#3C5865` | Meadow `#88C438` |
+| Warm accent | Amber `#E0A96D` | Sunlight `#FFD152` |
+| Main text | Cream `#F0E5DE` | Cloud `#F0F6FC` |
 
-## 🎨 Color Palette
+Rain is the original warm orange theme. Sky keeps its low-contrast charcoal foundation but uses blue for structure and functions, green for strings and success, and yellow for literals and warnings.
 
-| Color | Hex/Value | Description | Usage |
-| :--- | :--- | :--- | :--- |
-| **Smoky Charcoal** | `#1A1D20` | Base background | Window backgrounds, primary panels |
-| **Translucent Charcoal** | `rgba(26, 29, 32, 0.85)` | Panel background | Floating overlays, dropdowns, dynamic island |
-| **Soft Cream** | `#F0E5DE` | Main foreground/text | Active text, labels, foreground icons |
-| **Vibrant Coral** | `#EC6E5D` | Primary accent | Active workspaces, focused selections, button states |
-| **Deep Slate Blue** | `#3C5865` | Secondary accent / indicator | Scrollbars, audio visualizers, borders, mute button |
+## Layout
 
----
-
-## 💻 Application Configurations
-
-### 1. Kitty (`~/.config/kitty/kitty.conf`)
-```ini
-background            #1A1D20
-foreground            #F0E5DE
-cursor                #EC6E5D
-selection_background  #3C5865
-selection_foreground  #F0E5DE
-
-# Standard Terminal Colors
-color0  #1A1D20
-color8  #232D35
-color1  #EC6E5D
-color9  #EC6E5D
-color2  #3C5865
-color10 #3C5865
-color3  #EC6E5D
-color11 #EC6E5D
-color4  #3C5865
-color12 #3C5865
-color5  #F0E5DE
-color13 #F0E5DE
-color6  #3C5865
-color14 #3C5865
-color7  #F0E5DE
-color15 #F0E5DE
+```text
+themes/
+├── rain/
+│   ├── palette.toml
+│   ├── zed.json
+│   ├── rustcode.toml
+│   ├── lazyvim.lua
+│   └── vesktop.css
+└── sky/
+    ├── palette.toml
+    ├── zed.json
+    ├── rustcode.toml
+    └── lazyvim.lua
 ```
 
-### 2. Cava (`~/.config/cava/config`)
-Smooth gradient transition from Deep Slate Blue to Vibrant Coral:
-```ini
-[color]
-gradient = 1
-gradient_color_1 = '#3c5865'
-gradient_color_2 = '#555b63'
-gradient_color_3 = '#6e5e62'
-gradient_color_4 = '#876161'
-gradient_color_5 = '#a06460'
-gradient_color_6 = '#b9675f'
-gradient_color_7 = '#d26a5e'
-gradient_color_8 = '#ec6e5d'
-```
+`zed/settings.json` contains the shared Zed configuration and currently selects Sky. Theme folders contain only theme-specific files, with matching names across applications.
 
-### 3. Mewline Bar (`/opt/mewline/src/mewline/styles/`)
-#### `default_theme.scss`
-```scss
-$background-base: #{"@panel-bg"};
-$background-highlight: #{"@base-bg"};
-$background-element: #{"@base-bg"};
+## Install
 
-$accent-color: #{"@accent-coral"};
-$accent-slate: #{"@accent-slate"};
-$accent-error: #f38ba8;
-$accent-warning: #fab387;
-$accent-success: #a6e3a1;
-
-$text-color: #{"@text-main"};
-$text-secondary: #585b70;
-$text-muted: #9399b2;
-$text-on-accent: #{"@base-bg"};
-
-$shadow-color: rgba(0, 0, 0, 0.6);
-$corners-color: #000000;
-```
-
-#### GTK Variables prepended in `main.scss`
-```scss
-@define-color base-bg #1A1D20;
-@define-color panel-bg rgba(26, 29, 32, 0.85);
-@define-color text-main #F0E5DE;
-@define-color accent-coral #EC6E5D;
-@define-color accent-slate #3C5865;
-```
-
-### 4. Neovim (LazyVim Catppuccin spec `lua/plugins/colorscheme.lua`)
-```lua
-return {
-  {
-    "catppuccin/nvim",
-    name = "catppuccin",
-    lazy = false,
-    priority = 1000,
-    opts = {
-      flavour = "mocha",
-      transparent_background = true,
-      color_overrides = {
-        all = {
-          rosewater = "#F0E5DE",
-          flamingo = "#F0E5DE",
-          pink = "#EC6E5D",
-          mauve = "#EC6E5D",
-          red = "#EC6E5D",
-          maroon = "#EC6E5D",
-          peach = "#EC6E5D",
-          yellow = "#F0E5DE",
-          green = "#3C5865",
-          teal = "#3C5865",
-          sky = "#3C5865",
-          sapphire = "#3C5865",
-          blue = "#3C5865",
-          lavender = "#3C5865",
-          text = "#F0E5DE",
-          subtext1 = "#c5bcb4",
-          subtext0 = "#ab9e95",
-          overlay2 = "#828c93",
-          overlay1 = "#5a646c",
-          overlay0 = "#3C5865",
-          surface2 = "#30343a",
-          surface1 = "#25282e",
-          surface0 = "#1a1d20",
-          base = "#1a1d20",
-          mantle = "#1a1d20",
-          crust = "#1a1d20",
-        },
-      },
-    },
-    config = function(_, opts)
-      require("catppuccin").setup(opts)
-      vim.cmd.colorscheme("catppuccin")
-    end,
-  },
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "catppuccin",
-    },
-  },
-}
-```
-
-### 5. Zed Editor
-
-Both settings and theme files can be symlinked directly from this repository to your local Zed configuration:
+Run these commands from the repository root. Keep both Zed and Rustcode themes installed so switching does not require replacing files.
 
 ```bash
-# Ensure themes directory exists
-mkdir -p ~/.config/zed/themes
+mkdir -p ~/.config/zed/themes ~/.config/rustcode/themes ~/.config/nvim/lua/plugins
 
-# Create symlinks (run from repository root)
-ln -sf "$(pwd)/zed/themes/cozy-rain.json" ~/.config/zed/themes/cozy-rain.json
-ln -sf "$(pwd)/zed/settings.json" ~/.config/zed/settings.json
+ln -sfn "$(pwd)/zed/settings.json" ~/.config/zed/settings.json
+ln -sfn "$(pwd)/themes/rain/zed.json" ~/.config/zed/themes/cozy-rain.json
+ln -sfn "$(pwd)/themes/sky/zed.json" ~/.config/zed/themes/sky.json
+
+ln -sfn "$(pwd)/themes/rain/rustcode.toml" ~/.config/rustcode/themes/rain.toml
+ln -sfn "$(pwd)/themes/sky/rustcode.toml" ~/.config/rustcode/themes/sky.toml
 ```
 
-Then select **Cozy Rain** in your Zed theme selector (`Cmd + k` then `Cmd + t`).
-
-### 6. Vesktop / Vencord (Discord client)
-
-Symlink the custom theme CSS file directly from this repository to your local Vesktop themes configuration:
+To use Sky in LazyVim:
 
 ```bash
-# Ensure Vesktop themes directory exists
+ln -sfn "$(pwd)/themes/sky/lazyvim.lua" ~/.config/nvim/lua/plugins/theme.lua
+```
+
+To switch LazyVim back to Rain, point the same link at `themes/rain/lazyvim.lua`.
+
+### Vesktop
+
+Rain also includes the existing Vesktop theme:
+
+```bash
 mkdir -p "$HOME/Library/Application Support/vesktop/themes"
-
-# Create symlink (run from repository root)
-ln -sf "$(pwd)/discord/cozy-rain.theme.css" "$HOME/Library/Application Support/vesktop/themes/cozy-rain.theme.css"
+ln -sfn "$(pwd)/themes/rain/vesktop.css" \
+  "$HOME/Library/Application Support/vesktop/themes/cozy-rain.theme.css"
 ```
 
-Then go to **Discord Settings > Vencord > Themes**, find **Cozy Rain** under **Local Themes**, and toggle it on!
+Enable **Cozy Rain** under **Discord Settings → Vencord → Themes**.

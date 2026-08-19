@@ -1,0 +1,22 @@
+# Sky theme color palette.
+
+[colors]
+base-bg = "#15171A"
+terminal-bg = "#1A1D20"
+panel-bg = "#162032"
+element-bg = "#1E2C44"
+text-main = "#F0F6FC"
+text-warm = "#F0E5DE"
+text-muted = "#7890A8"
+accent-blue = "#3894F0"
+accent-light-blue = "#56B6F7"
+accent-green = "#88C438"
+accent-yellow = "#FFD152"
+accent-red = "#F45866"
+accent-violet = "#8C9EFF"
+
+[metadata]
+name = "Sky"
+author = "Lucas"
+version = "1.0.0"
+description = "A dark summer-sky palette with azure, meadow green, and warm sunlight accents."
