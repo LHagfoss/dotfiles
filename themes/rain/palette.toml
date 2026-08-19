@@ -1,0 +1,20 @@
+# Rain theme color palette.
+
+[colors]
+base-bg = "#15171A"
+terminal-bg = "#1A1D20"
+panel-bg = "#1A1D20"
+panel-bg-translucent = "rgba(26, 29, 32, 0.85)"
+element-bg = "#22262A"
+text-main = "#F0E5DE"
+text-muted = "#88929A"
+accent-coral = "#EC6E5D"
+accent-slate = "#3C5865"
+accent-amber = "#E0A96D"
+accent-green = "#A6E3A1"
+
+[metadata]
+name = "Cozy Rain"
+author = "Lucas"
+version = "1.0.0"
+description = "A warm charcoal palette with cream text, coral highlights, and slate accents."

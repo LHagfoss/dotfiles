@@ -1,0 +1,136 @@
+{
+  "$schema": "https://zed.dev/schema/themes/v0.2.0.json",
+  "name": "Sky",
+  "author": "Lucas",
+  "themes": [
+    {
+      "name": "Sky",
+      "appearance": "dark",
+      "style": {
+        "background": "#15171A",
+        "border": "#15171A",
+        "border.focused": "#15171A",
+        "border.selected": "#3894F0",
+        "border.variant": "#15171A",
+        "pane_group.border": "#15171A",
+        "panel.focused_border": "#15171A",
+        "pane.focused_border": "#15171A",
+        "elevated_surface.background": "#15171A",
+        "elevated_surface.border": "#15171A",
+        "surface.background": "#15171A",
+        "conflict": "#F45866",
+        "created": "#88C438",
+        "deleted": "#F45866",
+        "modified": "#3894F0",
+        "warning": "#FFD152",
+        "editor.background": "#15171A",
+        "editor.gutter.background": "#15171A",
+        "editor.foreground": "#F0E5DE",
+        "editor.line_number": "#525A61",
+        "editor.active_line_number": "#F0E5DE",
+        "editor.active_line.background": "#1B1D20",
+        "editor.indent_guide": "#24282B",
+        "editor.indent_guide_active": "#3894F0",
+        "editor.document_highlight.read_background": "#3894F04D",
+        "editor.document_highlight.write_background": "#88C43833",
+        "scrollbar.thumb.background": "#3894F04D",
+        "scrollbar.thumb.hover_background": "#3894F080",
+        "scrollbar.track.background": "#15171A",
+        "element.background": "#22262A",
+        "element.hover": "#2B3035",
+        "element.active": "#353B42",
+        "element.selected": "#3894F033",
+        "ghost_element.background": "#00000000",
+        "ghost_element.hover": "#3894F01A",
+        "ghost_element.active": "#3894F026",
+        "ghost_element.selected": "#3894F033",
+        "panel.background": "#15171A",
+        "status_bar.background": "#15171A",
+        "title_bar.background": "#15171A",
+        "toolbar.background": "#15171A",
+        "tab_bar.background": "#15171A",
+        "tab.active_background": "#15171A",
+        "tab.inactive_background": "#15171A",
+        "text": "#F0E5DE",
+        "text.muted": "#88929A",
+        "text.placeholder": "#525A61",
+        "text.accent": "#3894F0",
+        "syntax": {
+          "comment": {
+            "color": "#5A6D77",
+            "font_style": "italic"
+          },
+          "comment.doc": {
+            "color": "#6D818C",
+            "font_style": "italic"
+          },
+          "keyword": {
+            "color": "#3894F0",
+            "font_weight": 700
+          },
+          "function": {
+            "color": "#3894F0"
+          },
+          "string": {
+            "color": "#88C438"
+          },
+          "string.escape": {
+            "color": "#3894F0"
+          },
+          "type": {
+            "color": "#56B6F7",
+            "font_weight": 600
+          },
+          "variable": {
+            "color": "#F0E5DE"
+          },
+          "variable.parameter": {
+            "color": "#D3C8C0"
+          },
+          "number": {
+            "color": "#FFD152"
+          },
+          "boolean": {
+            "color": "#FFD152"
+          },
+          "constant": {
+            "color": "#F0E5DE"
+          },
+          "property": {
+            "color": "#D3C8C0"
+          },
+          "operator": {
+            "color": "#88C438"
+          },
+          "punctuation": {
+            "color": "#7890A8"
+          },
+          "tag": {
+            "color": "#3894F0"
+          },
+          "attribute": {
+            "color": "#88C438"
+          }
+        },
+        "terminal.background": "#1A1D20",
+        "terminal.foreground": "#F0E5DE",
+        "terminal.ansi.black": "#1A1D20",
+        "terminal.ansi.red": "#F45866",
+        "terminal.ansi.green": "#88C438",
+        "terminal.ansi.yellow": "#FFD152",
+        "terminal.ansi.blue": "#3894F0",
+        "terminal.ansi.magenta": "#8C9EFF",
+        "terminal.ansi.cyan": "#56B6F7",
+        "terminal.ansi.white": "#F0E5DE",
+        "terminal.ansi.bright_black": "#232D35",
+        "terminal.ansi.bright_red": "#F45866",
+        "terminal.ansi.bright_green": "#88C438",
+        "terminal.ansi.bright_yellow": "#FFD152",
+        "terminal.ansi.bright_blue": "#56B6F7",
+        "terminal.ansi.bright_magenta": "#8C9EFF",
+        "terminal.ansi.bright_cyan": "#56B6F7",
+        "terminal.ansi.bright_white": "#FFFFFF"
+      }
+    }
+  ]
+}
