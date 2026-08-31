@@ -1,0 +1,111 @@
+# $schema = 'https://starship.rs/config-schema.json'
+
+format = """
+[](color_one)\ 
+$os\ 
+$username\ 
+[](bg:color_two fg:color_one)\ 
+$directory\ 
+[](bg:color_three fg:color_two)\ 
+$git_branch\ 
+$git_status\ 
+[](bg:color_four fg:color_three)\ 
+$c\ 
+$rust\ 
+$golang\ 
+$nodejs\ 
+$bun\ 
+$php\ 
+$java\ 
+$kotlin\ 
+$docker_context\ 
+$conda\ 
+[](bg:color_one fg:color_four)\ 
+$cmd_duration\ 
+[](fg:color_one)\ 
+\n$character"""
+
+palette = "sky_rain"
+
+[palettes.sky_rain]
+color_one = '#192330'
+color_two = '#6D9BC4'
+color_three = '#8FA878'
+color_four = '#233143'
+text_light = '#D8E0E8'
+
+[palettes.cozy_rain]
+color_one = '#232D35'
+color_two = '#3C5865'
+color_three = '#EC6E5D'
+color_four = '#1A1D20'
+text_light = '#F0E5DE'
+
+[os]
+disabled = false
+style = 'bg:color_one fg:text_light'
+format = '[$symbol ]($style)'
+
+[os.symbols]
+Macos = ''
+
+[username]
+show_always = true
+style_user = 'bg:color_one fg:text_light bold'
+style_root = 'bg:color_one fg:text_light bold'
+format = '[$user ]($style)'
+
+[directory]
+style = 'bg:color_two fg:text_light'
+format = '[ $path ]($style)'
+truncation_length = 3
+truncation_symbol = '…/'
+
+[git_branch]
+symbol = ''
+style = 'bg:color_three fg:text_light'
+format = '[[ $symbol $branch ](fg:text_light bg:color_three)]($style)'
+
+[git_status]
+style = 'bg:color_three fg:text_light'
+format = '[[($all_status$ahead_behind )](fg:text_light bg:color_three)]($style)'
+
+[c]
+symbol = ' '
+style = 'bg:color_four fg:text_light'
+format = '[[ $symbol ($version) ](fg:text_light bg:color_four)]($style)'
+
+[rust]
+symbol = ''
+style = 'bg:color_four fg:text_light'
+format = '[[ $symbol ($version) ](fg:text_light bg:color_four)]($style)'
+
+[golang]
+symbol = ''
+style = 'bg:color_four fg:text_light'
+format = '[[ $symbol ($version) ](fg:text_light bg:color_four)]($style)'
+
+[nodejs]
+symbol = ''
+style = 'bg:color_four fg:text_light'
+format = '[[ $symbol ($version) ](fg:text_light bg:color_four)]($style)'
+
+[bun]
+symbol = '🥟'
+style = 'bg:color_four fg:text_light'
+format = '[[ $symbol ($version) ](fg:text_light bg:color_four)]($style)'
+
+[cmd_duration]
+min_time = 0
+style = 'bg:color_one fg:text_light'
+format = '[[  $duration ](fg:text_light bg:color_one)]($style)'
+
+[character]
+success_symbol = '[❯](color_two)'
+error_symbol = '[❯](red)'
+vimcmd_symbol = '[❮](green)'
+
+[docker_context]
+style = 'bg:color_four fg:text_light'
+symbol = '🐳'
+format = '[[ $symbol $context ](fg:text_light bg:color_four)]($style)'

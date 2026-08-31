@@ -1,6 +1,6 @@
 # Rain and Sky themes
 
-Two related dark themes for Zed, Rustcode, and LazyVim:
+Two related dark themes for Zed, Rustcode, LazyVim, Ghostty, and Starship:
 
 | Role | Rain | Sky |
 | --- | --- | --- |
@@ -26,7 +26,9 @@ themes/
     ├── palette.toml
     ├── zed.json
     ├── rustcode.toml
-    └── lazyvim.lua
+    ├── lazyvim.lua
+    ├── ghostty
+    └── starship.toml
 ```
 
 `zed/settings.json` contains the shared Zed configuration and currently selects Sky. Theme folders contain only theme-specific files, with matching names across applications.
@@ -53,6 +55,22 @@ ln -sfn "$(pwd)/themes/sky/lazyvim.lua" ~/.config/nvim/lua/plugins/theme.lua
 ```
 
 To switch LazyVim back to Rain, point the same link at `themes/rain/lazyvim.lua`.
+
+To use Sky in Ghostty on macOS:
+
+```bash
+mkdir -p "$HOME/.config/ghostty/themes"
+ln -sfn "$(pwd)/themes/sky/ghostty" \
+  "$HOME/.config/ghostty/themes/Sky"
+```
+
+Then set `theme = Sky` in Ghostty's config.
+
+To use the current Sky/Rain Starship prompt:
+
+```bash
+ln -sfn "$(pwd)/themes/sky/starship.toml" ~/.config/starship.toml
+```
 
 ### Vesktop
 
