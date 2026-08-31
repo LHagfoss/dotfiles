@@ -1,28 +1,28 @@
 # $schema = 'https://starship.rs/config-schema.json'
 
 format = """
-[](color_one)\ 
-$os\ 
-$username\ 
-[](bg:color_two fg:color_one)\ 
-$directory\ 
-[](bg:color_three fg:color_two)\ 
-$git_branch\ 
-$git_status\ 
-[](bg:color_four fg:color_three)\ 
-$c\ 
-$rust\ 
-$golang\ 
-$nodejs\ 
-$bun\ 
-$php\ 
-$java\ 
-$kotlin\ 
-$docker_context\ 
-$conda\ 
-[](bg:color_one fg:color_four)\ 
-$cmd_duration\ 
-[](fg:color_one)\ 
+[](color_one)\
+$os\
+$username\
+[](bg:color_two fg:color_one)\
+$directory\
+[](bg:color_three fg:color_two)\
+$git_branch\
+$git_status\
+[](bg:color_four fg:color_three)\
+$c\
+$rust\
+$golang\
+$nodejs\
+$bun\
+$php\
+$java\
+$kotlin\
+$docker_context\
+$conda\
+[](bg:color_one fg:color_four)\
+$cmd_duration\
+[](fg:color_one)\
 \n$character"""
 
 palette = "sky_rain"
