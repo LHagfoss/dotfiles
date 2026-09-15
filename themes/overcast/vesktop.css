@@ -1,0 +1,106 @@
+/**
+ * @name Overcast
+ * @author Lucas
+ * @version 1.0.0
+ * @description A quiet, low-contrast slate Discord theme inspired by a blurred overcast sky.
+ * @source https://github.com/LHagfoss/dotfiles
+ */
+
+:root {
+  --overcast-bg: #27292C;
+  --overcast-panel: #27292C;
+  --overcast-element: #27292C;
+  --overcast-hover: #4A4C57;
+  --overcast-text: #D0CCC7;
+  --overcast-muted: #92929C;
+  --overcast-accent: #B28EE8;
+  --overcast-soft: #BBA4E7;
+  --overcast-positive: #A4AAA0;
+  --overcast-warning: #B1A79E;
+  --overcast-danger: #A78C8D;
+
+  --background-primary: var(--overcast-bg) !important;
+  --background-secondary: var(--overcast-panel) !important;
+  --background-secondary-alt: var(--overcast-bg) !important;
+  --background-tertiary: var(--overcast-bg) !important;
+  --background-accent: var(--overcast-accent) !important;
+  --background-floating: var(--overcast-panel) !important;
+  --background-nested-landing: var(--overcast-bg) !important;
+  --background-nested-landings: var(--overcast-bg) !important;
+  --background-modifier-hover: rgba(167, 137, 214, 0.10) !important;
+  --background-modifier-active: rgba(167, 137, 214, 0.15) !important;
+  --background-modifier-selected: rgba(167, 137, 214, 0.20) !important;
+  --background-modifier-accent: var(--overcast-accent) !important;
+
+  --text-normal: var(--overcast-text) !important;
+  --text-muted: var(--overcast-muted) !important;
+  --text-link: var(--overcast-soft) !important;
+  --text-positive: var(--overcast-positive) !important;
+  --text-warning: var(--overcast-warning) !important;
+  --text-danger: var(--overcast-danger) !important;
+  --text-brand: var(--overcast-soft) !important;
+  --interactive-normal: var(--overcast-muted) !important;
+  --interactive-hover: var(--overcast-text) !important;
+  --interactive-active: var(--overcast-soft) !important;
+  --interactive-muted: #5E606B !important;
+
+  --brand-experiment: var(--overcast-accent) !important;
+  --brand-experiment-500: var(--overcast-accent) !important;
+  --brand-experiment-600: #707587 !important;
+  --brand-experiment-300: var(--overcast-soft) !important;
+  --scrollbar-thin-thumb: #5B5E6B !important;
+  --scrollbar-thin-track: transparent !important;
+  --scrollbar-auto-thumb: #5B5E6B !important;
+  --scrollbar-auto-track: transparent !important;
+  --input-background: var(--overcast-panel) !important;
+  --textbox-markdown-syntax: var(--overcast-accent) !important;
+  --profile-body-background-color: var(--overcast-bg) !important;
+  --status-danger: var(--overcast-danger) !important;
+  --status-positive: var(--overcast-positive) !important;
+  --status-warning: var(--overcast-warning) !important;
+}
+
+div[class^="inner_"] {
+  background-color: var(--input-background) !important;
+}
+
+div[class^="pill_"] span[class^="item_"] {
+  background-color: var(--overcast-accent) !important;
+}
+
+span[class*="mention"] {
+  background-color: rgba(167, 137, 214, 0.15) !important;
+  color: var(--overcast-soft) !important;
+}
+
+span[class*="mention"]:hover {
+  background-color: rgba(167, 137, 214, 0.25) !important;
+}
+
+div[class*="mentioned_"] {
+  background-color: rgba(167, 137, 214, 0.05) !important;
+}
+
+div[class*="mentioned_"]::before {
+  background-color: var(--overcast-accent) !important;
+}
+
+div[class^="expandedFolderIconWrapper_"] {
+  color: var(--overcast-soft) !important;
+}
+
+div[class^="folder_"] {
+  background-color: var(--overcast-panel) !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thin-thumb) !important;
+  border-radius: 4px !important;
+}
+
+div[class^="sidebar_"],
+div[class^="guilds_"],
+nav[class^="guilds_"],
+section[class^="title_"] {
+  border: none !important;
+}

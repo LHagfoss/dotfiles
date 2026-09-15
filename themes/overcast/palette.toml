@@ -1,0 +1,21 @@
+# Overcast theme color palette.
+
+[colors]
+base-bg = "#27292C"
+terminal-bg = "#27292C"
+panel-bg = "#27292C"
+element-bg = "#27292C"
+text-main = "#F0EDEB"
+text-muted = "#92929C"
+accent-purple = "#B28EE8"
+accent-slate = "#9BAED1"
+accent-soft = "#CFB5FF"
+accent-warm = "#C8B18E"
+accent-green = "#A8C7B0"
+accent-red = "#C18F9D"
+
+[metadata]
+name = "Overcast"
+author = "Lucas"
+version = "1.0.0"
+description = "A quiet, low-contrast slate palette with a restrained purple accent, inspired by a blurred overcast sky."

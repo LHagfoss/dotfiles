@@ -11,7 +11,10 @@
   --base-charcoal: #15171A;       /* Base backgrounds */
   --light-charcoal: #1A1D20;      /* Secondary backgrounds */
   --soft-cream: #F0E5DE;          /* Normal text */
-  --accent-coral: #EC6E5D;        /* Primary highlights, links, buttons */
+  --accent-purple: #B28EE8;       /* Primary highlights, links, buttons */
+  --accent-purple-dark: #8169AA;  /* Hover/pressed purple */
+  --accent-purple-light: #BBA4E7; /* Bright purple syntax/detail */
+  --accent-coral: #EC6E5D;        /* Warm danger/status accent */
   --accent-slate: #3C5865;        /* Borders, muted states, visual indicators */
   
   /* Discord Theme Overrides */
@@ -19,35 +22,35 @@
   --background-secondary: var(--light-charcoal) !important;
   --background-secondary-alt: #111214 !important; /* user settings panel / alt panels */
   --background-tertiary: #111214 !important; /* server sidebar list */
-  --background-accent: var(--accent-slate) !important;
+  --background-accent: var(--accent-purple) !important;
   --background-floating: var(--base-charcoal) !important;
   --background-nested-landings: #111214 !important;
   
-  --background-modifier-hover: rgba(236, 110, 93, 0.1) !important; /* ~10% coral hover */
-  --background-modifier-active: rgba(236, 110, 93, 0.15) !important; /* ~15% coral active */
-  --background-modifier-selected: rgba(236, 110, 93, 0.2) !important; /* ~20% coral selected */
+  --background-modifier-hover: rgba(167, 137, 214, 0.1) !important; /* ~10% purple hover */
+  --background-modifier-active: rgba(167, 137, 214, 0.15) !important; /* ~15% purple active */
+  --background-modifier-selected: rgba(167, 137, 214, 0.2) !important; /* ~20% purple selected */
   --background-modifier-accent: var(--accent-slate) !important;
 
   /* Text Colors */
   --text-normal: var(--soft-cream) !important;
   --text-muted: #88929A !important;
-  --text-link: var(--accent-coral) !important;
+  --text-link: var(--accent-purple-light) !important;
   --text-positive: #a6e3a1 !important;
   --text-warning: #E0A96D !important;
   --text-danger: var(--accent-coral) !important;
-  --text-brand: var(--accent-coral) !important;
+  --text-brand: var(--accent-purple-light) !important;
   
   /* Interactive elements (icons, channel list links) */
   --interactive-normal: #88929A !important;
   --interactive-hover: var(--soft-cream) !important;
-  --interactive-active: var(--accent-coral) !important;
+  --interactive-active: var(--accent-purple-light) !important;
   --interactive-muted: #525A61 !important;
   
   /* Brand/Accent Colors (used for primary buttons, mentions, unreads, links) */
-  --brand-experiment: var(--accent-coral) !important;
-  --brand-experiment-500: var(--accent-coral) !important;
-  --brand-experiment-600: #D85A4A !important; /* slightly darker coral for hover states */
-  --brand-experiment-300: #F48A7D !important; /* slightly lighter coral for light accents */
+  --brand-experiment: var(--accent-purple) !important;
+  --brand-experiment-500: var(--accent-purple) !important;
+  --brand-experiment-600: var(--accent-purple-dark) !important;
+  --brand-experiment-300: var(--accent-purple-light) !important;
   
   /* Scrollbars */
   --scrollbar-thin-thumb: var(--accent-slate) !important;
@@ -57,7 +60,7 @@
   
   /* Input fields */
   --input-background: var(--light-charcoal) !important;
-  --textbox-markdown-syntax: var(--accent-slate) !important;
+  --textbox-markdown-syntax: var(--accent-purple) !important;
   
   /* User profile/card backgrounds */
   --profile-body-background-color: var(--base-charcoal) !important;
@@ -77,27 +80,27 @@ div[class^="inner_"] {
 
 /* Selected channel/server indicator */
 div[class^="pill_"] span[class^="item_"] {
-  background-color: var(--accent-coral) !important;
+  background-color: var(--accent-purple) !important;
 }
 
 /* User mentions (highlight background & side accent border) */
 span[class*="mention"] {
-  background-color: rgba(236, 110, 93, 0.15) !important;
-  color: var(--accent-coral) !important;
+  background-color: rgba(167, 137, 214, 0.15) !important;
+  color: var(--accent-purple-light) !important;
 }
 span[class*="mention"]:hover {
-  background-color: rgba(236, 110, 93, 0.25) !important;
+  background-color: rgba(167, 137, 214, 0.25) !important;
 }
 div[class*="mentioned_"] {
-  background-color: rgba(236, 110, 93, 0.05) !important;
+  background-color: rgba(167, 137, 214, 0.05) !important;
 }
 div[class*="mentioned_"]::before {
-  background-color: var(--accent-coral) !important;
+  background-color: var(--accent-purple) !important;
 }
 
 /* Folder backgrounds */
 div[class^="expandedFolderIconWrapper_"] {
-  color: var(--accent-coral) !important;
+  color: var(--accent-purple-light) !important;
 }
 div[class^="folder_"] {
   background-color: var(--light-charcoal) !important;

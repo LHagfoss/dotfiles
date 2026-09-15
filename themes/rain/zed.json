@@ -10,7 +10,7 @@
         "background": "#15171A",
         "border": "#15171A",
         "border.focused": "#15171A",
-        "border.selected": "#EC6E5D",
+        "border.selected": "#B28EE8",
         "border.variant": "#15171A",
         "pane_group.border": "#15171A",
         "panel.focused_border": "#15171A",
@@ -21,29 +21,29 @@
         "conflict": "#EC6E5D",
         "created": "#3C5865",
         "deleted": "#EC6E5D",
-        "modified": "#EC6E5D",
+        "modified": "#B28EE8",
         "warning": "#E0A96D",
         "editor.background": "#15171A",
         "editor.gutter.background": "#15171A",
-        "editor.foreground": "#F0E5DE",
+        "editor.foreground": "#F5F2F0",
         "editor.line_number": "#525A61",
-        "editor.active_line_number": "#F0E5DE",
+        "editor.active_line_number": "#F5F2F0",
         "editor.active_line.background": "#1B1D20",
         "editor.indent_guide": "#24282B",
-        "editor.indent_guide_active": "#3C5865",
+        "editor.indent_guide_active": "#5B4A78",
         "editor.document_highlight.read_background": "#3C58654D",
-        "editor.document_highlight.write_background": "#EC6E5D33",
+        "editor.document_highlight.write_background": "#B28EE833",
         "scrollbar.thumb.background": "#3C58654D",
         "scrollbar.thumb.hover_background": "#3C586580",
         "scrollbar.track.background": "#15171A",
         "element.background": "#22262A",
         "element.hover": "#2B3035",
         "element.active": "#353B42",
-        "element.selected": "#EC6E5D33",
+        "element.selected": "#B28EE833",
         "ghost_element.background": "#00000000",
-        "ghost_element.hover": "#EC6E5D1A",
-        "ghost_element.active": "#EC6E5D26",
-        "ghost_element.selected": "#EC6E5D33",
+        "ghost_element.hover": "#B28EE81A",
+        "ghost_element.active": "#B28EE826",
+        "ghost_element.selected": "#B28EE833",
         "panel.background": "#15171A",
         "status_bar.background": "#15171A",
         "title_bar.background": "#15171A",
@@ -51,10 +51,10 @@
         "tab_bar.background": "#15171A",
         "tab.active_background": "#15171A",
         "tab.inactive_background": "#15171A",
-        "text": "#F0E5DE",
-        "text.muted": "#88929A",
+        "text": "#F5F2F0",
+        "text.muted": "#9294A0",
         "text.placeholder": "#525A61",
-        "text.accent": "#EC6E5D",
+        "text.accent": "#B28EE8",
         "syntax": {
           "comment": {
             "color": "#5A6D77",
@@ -65,24 +65,24 @@
             "font_style": "italic"
           },
           "keyword": {
-            "color": "#EC6E5D",
+            "color": "#B28EE8",
             "font_weight": 700
           },
           "function": {
-            "color": "#EC6E5D"
+            "color": "#BBA4E7"
           },
           "string": {
-            "color": "#F0E5DE"
+            "color": "#F5F2F0"
           },
           "string.escape": {
-            "color": "#EC6E5D"
+            "color": "#B1A79E"
           },
           "type": {
             "color": "#3C5865",
             "font_weight": 600
           },
           "variable": {
-            "color": "#F0E5DE"
+            "color": "#F5F2F0"
           },
           "variable.parameter": {
             "color": "#D3C8C0"
@@ -113,23 +113,23 @@
           }
         },
         "terminal.background": "#1A1D20",
-        "terminal.foreground": "#F0E5DE",
+        "terminal.foreground": "#F5F2F0",
         "terminal.ansi.black": "#1A1D20",
         "terminal.ansi.red": "#EC6E5D",
         "terminal.ansi.green": "#3C5865",
         "terminal.ansi.yellow": "#EC6E5D",
         "terminal.ansi.blue": "#3C5865",
-        "terminal.ansi.magenta": "#F0E5DE",
+        "terminal.ansi.magenta": "#B28EE8",
         "terminal.ansi.cyan": "#3C5865",
-        "terminal.ansi.white": "#F0E5DE",
+        "terminal.ansi.white": "#F5F2F0",
         "terminal.ansi.bright_black": "#232D35",
         "terminal.ansi.bright_red": "#EC6E5D",
         "terminal.ansi.bright_green": "#3C5865",
         "terminal.ansi.bright_yellow": "#EC6E5D",
         "terminal.ansi.bright_blue": "#3C5865",
-        "terminal.ansi.bright_magenta": "#F0E5DE",
-        "terminal.ansi.bright_cyan": "#3C5865",
-        "terminal.ansi.bright_white": "#F0E5DE"
+        "terminal.ansi.bright_magenta": "#BBA4E7",
+        "terminal.ansi.bright_cyan": "#88929A",
+        "terminal.ansi.bright_white": "#FFFFFF"
       }
     }
   ]

@@ -111,7 +111,7 @@
     "theme": {
         "mode": "dark",
         "light": "Ayu Light",
-        "dark": "Sky",
+        "dark": "Overcast",
     },
     "buffer_font_family": ".ZedMono",
     "buffer_font_features": {
